@@ -52,27 +52,29 @@
             AOS.init();
         </script>
 
-        <header id="navbar" class="fixed">
-            <ul>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#trayectoria">Trayectoria</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#presentacion">Home</a></li>  
-            </ul> 
-        </header>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
 
         <!-- SECCION 1 -->
         <div id="presentacion" class="seccion">
-            <div class="descripcion">
-                <h1 style="  animation-duration: 2s; /* don't forget to set a duration! */"><span class="blod">Hola</span> <span class="light">mundo</span></h1>
-                <p>Soy Adrián Benítez. Estudiante desarrollador de aplicaciones multiplataforma.</p>
-            </div>
-            <img src="img/avatar.png" id="avatar" alt="">
-            <img src="img/avatar-icons.png" id="avatar-icons" alt="">
-            <img src="img/avatar-completo.png" id="avatar-completo" alt="">
+            <div class="jumbotron centrado">
+                <h1 class="display-4">Hola mundo!</h1>
+                <p class="lead">Soy <b>Adrián Benítez</b> estudiante desarrollador de aplicaciones multiplataforma.</p>
+                <i class="fas fa-angle-double-down"></i>
+              </div>
         </div>
-        <i class="fa-solid fa-chevron-down" id="flecha-1"></i>
         <!-- FIN SECCION 1 -->
 
         <!-- SECCION 2 -->
@@ -91,50 +93,64 @@
             </p>                
             <img src="img/portrait.png" data-aos="fade-up" data-aos-delay="300"> 
         </div>    
-        <i class="fa-solid fa-chevron-down" id="flecha-2"></i>
         <!-- FIN SECCION 2 -->
 
         <!-- SECCION 3 -->
-        <div id="trayectoria" class="seccion">
-            <img src="img/trayectoria.svg">
-        </div> 
-        <i class="fa-solid fa-chevron-down" id="flecha-3"></i>
-        <!-- FIN SECCION 3 -->
+        
+        <div id="tecnologias" class="seccion">
+            <h2>Tecnologías</h2>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark"><b>He trabajado con: </b></li>
+                <li class="list-group-item">Java <i class="fab fa-java"></i></li>
+                <li class="list-group-item">JavaScript <i class="fab fa-js-square"></i></li>
+                <li class="list-group-item">PHP <i class="fab fa-php"></i></li>
+                <li class="list-group-item">SQL <i class="fas fa-database"></i></li>
+                <li class="list-group-item">Django <i class="fab fa-python"></i></li>
 
+                <li class="list-group-item list-group-item-dark"><b>Estoy estudiando: </b></li>
+                <li class="list-group-item list-group-item-warning">Angular <i class="fab fa-angular"></i></li>
+                <li class="list-group-item list-group-item-warning">Laravel <i class="fab fa-laravel"></i></li>
+            </ul>
+        </div>
+        <!-- FIN SECCION 3 -->
+        <div id="trayectoria">
+            <img src="img/trayectoria.svg">
+        </div>
         <!-- SECCION 4 -->
         <div id="proyectos" class="seccion">
             <h2>Proyectos personales</h2>
             <div class="flex-container">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/porfolio/mini-porfolio.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Porfolio</h5>
                       <p class="card-text">Aplicacion web carta de presentación, sobre mi, trayectoria, proyectos personales...</p>
-                      <a href="#" class="btn btn-primary">Ver más</a>
+                      <a href="index.html" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
                 
-                <div id="emv" class="project-card" data-aos="flip-up" 
-                                                    data-aos-delay="300">
-                    <div class="img"></div>
-                    <h3 class="semi-blod">EcoMaps València</h3>
-                    <span class="light italic">Comercio ecológico</span>
-                    <a href="https://ecomaps-valencia.uptodown.com/android">Ver más</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/emv/banner-emv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">EcoMaps València</h5>
+                      <p class="card-text">Comerç local i ecologic arreu de tot el país.</p>
+                      <a href="https://ecomaps-valencia.uptodown.com/android" class="btn btn-primary">Ver más</a>
+                    </div>
                 </div>
           
-                <div id="plutto" class="project-card" data-aos="flip-up" 
-                                                        data-aos-delay="600">
-                    <div class="img"></div>
-                    <h3 class="semi-blod">Plutto</h3>
-                    <span class="light italic">Finanzas personales</span>
-                    <a href="https://plutto-app.web.app/index.html">Ver más</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/plutto/banner-plutto.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Plutto</h5>
+                      <p class="card-text">Control de finanzas personales desde tu bolsillo.</p>
+                      <a href="https://plutto-app.web.app/index.html" class="btn btn-primary">Ver más</a>
+                    </div>
                 </div>
             </div>
             <a href="https://github.com/adriib38" target="_blank" id="otros-proyectos">Otros proyectos</a>
        
         </div> 
-        <i class="fa-solid fa-chevron-down" id="flecha-4"></i>
         <!-- FIN SECCION 4 -->
 
         <!-- SECCION 5 -->
@@ -148,9 +164,7 @@
                 <a href="https://t.me/adrianbnt" title="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
             </div>
         </div> 
-        <i class="fa-solid fa-chevron-up" id="flecha-5"></i>
         <!-- FIN SECCION 5 -->
-        <button id="btn-snow" class="fa-regular fa-snowflake"></button>
         <a href="libreria.html" id="btn-book" class="fa-solid fa-book"></a>
 
 

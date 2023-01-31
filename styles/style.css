@@ -27,9 +27,7 @@ h1, h2, h3, h4, h5, p, a, span, li, ol, div {
 }
 
 h2,
-#presentacion,
 #sobremi {
-
     color: var(--blanco);
 }
 
@@ -82,8 +80,9 @@ header li a:hover { background-color: var(--blanco); }
 .seccion{
     width: 100%;
     height: 400px!important;
-    padding-top: 220px!important;
-    padding-bottom: 220px!important;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 20px;
 }
 
 .fa-chevron-down,
@@ -96,6 +95,10 @@ header li a:hover { background-color: var(--blanco); }
 }
 
 /** PRESENTACION */
+
+.jumbotron {
+    width: 70%;
+}
 
 #presentacion {
     display: flex;
@@ -113,7 +116,6 @@ header li a:hover { background-color: var(--blanco); }
     height: 400px;
 
     animation: subebaja 6s infinite;
-
 }
 
 #avatar-completo { display: none;}
@@ -155,20 +157,6 @@ header li a:hover { background-color: var(--blanco); }
 
 }
 
-/** TRAYECTORIA */
-
-#trayectoria {
-    height: 620px!important;
-    padding-top: 0px!important;
-    padding-bottom: 220px;
-    text-align: center;
-    background-color: var(--gris);
-}
-
-#trayectoria > img {
-    height: 700px;
-}
-
 /** PROYECTOS **/
 #proyectos {
     height: auto!important;
@@ -180,23 +168,6 @@ header li a:hover { background-color: var(--blanco); }
     padding: 10px;
     flex-wrap: wrap;
 }
-
-#proyectos #porfolio .img{
-    background: url("../img/porfolio/maqueta1.png");
-    background-size: 100% 100%;
-}
-
-#proyectos #emv .img{
-    background: url("../img/emv/banner-emv2.png");
-    background-size: 100% 100%;
-}
-
-#proyectos #plutto .img{
-    background: url("../img/plutto/banner-plutto.png");
-    background-size: 100% 100%;
-}
-
-
 
 #otros-proyectos {
     text-align: center;
@@ -273,6 +244,19 @@ a:link, a:visited, a:active {
     width: 80%;
     text-align: left;
 }
+
+#tecnologias > ul {
+    width: 40%;
+}
+
+#trayectoria {
+    text-align: center;
+}
+
+#trayectoria > img {
+    margin: 0px auto;
+}
+
 
 #proyecto-presentacion {
     margin-top: 20px;
@@ -407,7 +391,7 @@ a:link, a:visited, a:active {
     #sobremi > p {
         width: auto;
     }
-    #btn-snow { display: none; }
+
     #btn-book { display: none; }
         
     i.fa-chevron-down {
@@ -487,7 +471,6 @@ a:link, a:visited, a:active {
         padding-right: 20px;
     }
 
-    #trayectoria > img,
     #contacto > div{
         width: 100%;
     }
